@@ -8,7 +8,6 @@ class HttpBindings implements Bindings {
   //populate dependencies
   void dependencies() {
     //add instances
-
     Get.put<IUserRepository>(UserHttpRepository());
     Get.put(HttpController(Get.find()));
   }

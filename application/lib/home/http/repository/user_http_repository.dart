@@ -11,7 +11,7 @@ class UserHttpRepository implements IUserRepository {
         // using mockapi to generate API
         .get(Uri.parse('https://67a91c276e9548e44fc2e5d9.mockapi.io/users'));
 
-    //convert json to dart object -> List<Map<String, dynamic>>
+    // convert json to dart object -> List<Map<String, dynamic>>
     final List<dynamic> responseMap = jsonDecode(response.body);
 
     // convert Map to User Model list

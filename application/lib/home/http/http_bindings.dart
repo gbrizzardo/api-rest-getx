@@ -7,7 +7,7 @@ class HttpBindings implements Bindings {
   @override
   //populate dependencies
   void dependencies() {
-    //add instances
+    // add instances
     Get.put<IUserRepository>(UserHttpRepository());
     Get.put(HttpController(Get.find()));
   }
